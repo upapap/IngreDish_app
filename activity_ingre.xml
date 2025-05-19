@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ingre"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IngreActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:title="IngreDish"
+        app:titleTextColor="@android:color/white" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toTopOf="@id/bottom_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="고기류"
+                android:textSize="35sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button android:id="@+id/button4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="대패삼겹살" />
+                <Button android:id="@+id/button5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="목살" />
+                <Button android:id="@+id/button6" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="고기3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button android:id="@+id/button7" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Button" />
+                <Button android:id="@+id/button8" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Button" />
+                <Button android:id="@+id/button9" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Button" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="야채인가"
+                android:textSize="35sp" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <Button android:id="@+id/btn_vg1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="야채1" />
+                <Button android:id="@+id/btn_vg2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="야채2" />
+                <Button android:id="@+id/btn_vg3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="야채3" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <Button android:id="@+id/btn_vg4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="야채4" />
+                <Button android:id="@+id/btn_vg5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="야채5" />
+                <Button android:id="@+id/btn_vg6" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="야채6" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <Button android:id="@+id/btn_vg7" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="야채7" />
+                <Button android:id="@+id/btn_vg8" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="야채8" />
+                <Button android:id="@+id/btn_vg9" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="야채9" />
+            </LinearLayout>
+
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="해산물?" android:textSize="35sp" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <Button android:id="@+id/btn_fi1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="해산물1" />
+                <Button android:id="@+id/btn_fi2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="해산물2" />
+                <Button android:id="@+id/btn_fi3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="해산물3" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <Button android:id="@+id/btn_fi4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="해산물4" />
+                <Button android:id="@+id/btn_fi5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="해산물5" />
+                <Button android:id="@+id/btn_fi6" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="해산물6" />
+            </LinearLayout>
+
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="기타 디기디기당당" android:textSize="35sp" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <Button android:id="@+id/btn_1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="기타1" />
+                <Button android:id="@+id/btn_2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="기타2" />
+                <Button android:id="@+id/btn_3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="기타3" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <Button android:id="@+id/btn_4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="기타4" />
+                <Button android:id="@+id/btn_5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="기타5" />
+                <Button android:id="@+id/btn_6" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="기타6" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="#673AB7"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
